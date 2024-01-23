@@ -1,0 +1,84 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style >
+			.div1{
+				background-color: darkred;
+				width: 200px;
+				height: 200px;
+				position: relative;
+				color: wheat;
+
+			}
+		</style>
+	</head>
+	<body>
+	
+	<div class="div1">
+		Animation stop
+	</div>
+
+<button id="animate">Animate</button>
+<button id="stop">stop</button>
+
+
+<script src="jquery-3.6.4.min.js"></script>
+
+<script>
+	
+	$(document).ready(function() {
+
+            $("#animate").click(function(){
+
+              $(".div1").animate({
+                  left: "200px" ,},"fast" );
+
+                        $(".div1").animate({
+                  top: "200px" ,},"slow" );
+                            
+
+                            $(".div1").animate({
+                  left: "0px" ,},"fast" );
+
+
+                            $(".div1").animate({
+                  top: "0px" ,},"fast" );
+
+
+
+            });
+
+	});
+
+
+
+
+
+
+$("#stop").click(function(){
+$(".div1").stop();
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+	</body>
+	</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title></title>
+		<style>
+			.div1{
+				background-color: rosybrown;
+				width: 200px;
+				height: 300px;
+				position: relative;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+			
+<div class="div1">
+        Animation
+</div>
+
+<button id="animate">animate</button>
+
+
+<script src="jquery-3.6.4.min.js"></script>
+
+
+<script> 
+
+$(document).ready(function (){ 
+
+           $("#animate").click(function() {
+
+           	$(".div1").animate({
+           		left:"150px",},"fast");
+
+                 	$(".div1").animate({
+           		top:"150px",},"fast");
+
+                 	$(".div1").animate({
+                 	left: "0px",},"fast");
+
+
+
+                 	$(".div1").animate({
+                 	top: "0px",},"fast");
+
+           	
+           });
+
+
+
+});
+
+     
+   
+
+
+
+
+
+
+
+
+</script>
+
+
+
+	</body>
+	</html>
